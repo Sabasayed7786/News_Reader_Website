@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+**API Integration**
+The app integrates with the News API to fetch the latest news articles from the TechCrunch source. The API endpoint used is:
+https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=cf14b20146414dd8b8d445a7b8fd32ab
+
+**Features**
+Login: Users can log in to the app using Firebase authentication.
+Signup: New users can sign up for an account using Firebase authentication.
+Home Page: After login, users are directed to the Home page.
+Navigation Bar: The navigation bar includes links to the Home, Login, and Signup pages. It also displays the user's name and a Logout button when logged in.
+News Grid: The Home page displays a grid of news articles fetched from the News API. Each article has a "Favorite" button to mark it as a favorite.
+Favorite Articles: Users can mark articles as favorites by clicking the "Favorite" button. The favorite articles are stored in the Firestore database for persistence.
+Read More: Users can click on the "Read More" button to view the full article in a new browser tab.
+
